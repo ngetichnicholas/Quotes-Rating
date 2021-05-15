@@ -4,7 +4,7 @@
       <div class="all-cards">
         <div *ngFor="let quote of sortQuotes let i= index" class="card" style="width: 24rem;">
           <div class="card-body">
-            <h4 class="card-title" appHighlightQoute>{{quote.quoteTitle}} {{quote.maxlikes}}<button (click)='displayInfo(i)'
+            <h4 class="card-title" appHighlightQoute>{{quote.quoteTitle}} {{quote.upvote}}<button (click)='displayInfo(i)'
                 class="btn btn-info btn-sm" id="quotes-button">See More</button></h4>
             <p class="card-text" id="param">{{quote.quoteInfo}}</p>
             <app-quote-details *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>

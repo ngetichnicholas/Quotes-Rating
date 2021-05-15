@@ -3,9 +3,12 @@
     <div class="col-md-9 quote">
       <div *ngFor="let quote of sortQuotes let i= index" class="quote-body" style="width: 25rem; height: 15rem;"> 
         <h4 class="title" appHighlightQoute>{{quote.quoteTitle}}</h4>
-        <p class="quote-info" id="param">{{quote.quoteInfo}}</p>
+        <p class="quote-info">{{quote.quoteInfo}}</p>
+        <div class="votes">
+          <div></div>
+        </div>
         <button (click)='displayInfo(i)'
-          class="btn btn-outline-primary" id="quotes-button">Ratings</button>
+          class="btn btn-outline-primary" id="quotes-button">Review</button>
         <app-quote-details *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
         </app-quote-details>
         <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}} </span> <span id="date">on: <span

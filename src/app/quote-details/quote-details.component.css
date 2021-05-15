@@ -1,0 +1,15 @@
+.votes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#upVote {
+  background-color: lightgreen;
+  padding: 1rem;
+  border-radius: 6px;
+}
+#downVote {
+background-color: lightyellow;
+padding: 1rem;
+border-radius: 6px;
+}

@@ -1,10 +1,8 @@
 <div class="votes">
+  <button class="btn btn-sm btn-success" (click)='upvote()'><i class="fa fa-thumbs-up" id="like"></i></button>
   <div id="upVote">Up votes: {{quoty.upvote}}</div>
+  <button class="btn btn-sm btn-warning" id="hate" (click)='downvote()'><i class="fa fa-thumbs-down" id="dislike"></i></button> 
   <div id="downVote">Down Votes: {{quoty.downvote}}</div>
+  <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fas fa-trash-alt"></i></button> 
 </div>
 <h6 class="card-subtitle mb-2 text-muted">{{quoty.author}} <span id="when">Posted: {{quoty.datePosted|dateCount}} days ago.</span></h6>
-<div class="container-fluid" id="buttons">
-  <button class="btn btn-sm btn-success" (click)='upvote()'><i class="fa fa-thumbs-up" id="like"></i></button> 
-  <button class="btn btn-sm hate" id="hate" (click)='downvote()'><i class="fa fa-thumbs-down" id="dislike"></i></button> 
-  <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fas fa-trash-alt"></i></button> 
-</div> 

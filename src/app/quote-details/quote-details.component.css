@@ -2,15 +2,24 @@
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 #upVote {
   background-color: lightgreen;
-  padding: 1rem;
-  border-radius: 6px;
+  padding: 0.9rem;
+  text-align: center;
+  margin-left: 0;
 }
 #downVote {
-background-color: lightyellow;
+background-color: rgb(221, 221, 112);
 padding: 1rem;
-border-radius: 6px;
+text-align: center;
+margin-left: 0;
+}
+.btn-warning, .btn-danger {
+  margin-left: 1rem;
+  border-radius: unset;
+}
+.btn-success {
+  border-radius: unset;
 }

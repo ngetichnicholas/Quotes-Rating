@@ -3,7 +3,7 @@
 Nicholas Ngetich
 ## Description
 This is an Angular web application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
-![alt text]()
+![alt text](https://github.com/ngetichnicholas/Quotes-Rating/blob/main/Quotes-image.png)
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal

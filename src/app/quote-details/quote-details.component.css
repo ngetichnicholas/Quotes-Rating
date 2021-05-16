@@ -23,3 +23,14 @@ margin-left: 0;
 .btn-success {
   border-radius: unset;
 }
+#timePosted {
+  font-weight: 600;
+}
+#date {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.author {
+  font-style: oblique;
+  font-weight: 600;
+}

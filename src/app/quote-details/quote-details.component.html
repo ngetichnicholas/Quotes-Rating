@@ -5,5 +5,5 @@
   <div id="downVote">Down Votes<br>{{quoty.downvote}}</div>
   <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fas fa-trash-alt"></i></button> 
 </div>
-<h6 class="card-subtitle mb-2 text-muted">Author: {{quoty.author}}</h6>
-<span id="when">Posted {{quoty.datePosted|dateCount}} days ago </span>
+<p >Author: <span class="author">{{quoty.author}}</span></p>
+Posted <span id="timePosted">{{quoty.datePosted | dateAgo}}</span>: <span id="date">{{quoty.datePosted | date}} </span>

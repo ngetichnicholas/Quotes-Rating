@@ -10,8 +10,7 @@
         <h5 class="text-primary">Review</h5>
         <app-quote-details *ngIf='quote' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
         </app-quote-details>
-        <span class="card-subtitle mb-2"> by <span id="name">{{quote.name}} </span> <span id="date">on: <span
-        id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+          by <span id="name">{{quote.name}} </span>
       </div>
     </div>
     <div class="col-md-3">

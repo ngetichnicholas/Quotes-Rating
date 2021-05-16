@@ -1,7 +1,18 @@
 # QuotesRating
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
-
+## Author
+Nicholas Ngetich
+## Description
+This is an Angular web application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+![alt text]()
+### Prerequisites
+You need to have git installed
+You can install it with the following command in your terminal
+`$ sudo apt install git-all`
+### Setup
+To access this project on your local files, you can clone it using these steps
+1. Open your terminal
+1. Use this command to clone $ git clone https://github.com/ngetichnick/Neo-Pizza.git
+1. This will clone the repositoty into your local folder
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,4 +36,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Quotes-Rating
+## Technologies Used
+- TypeScript
+- Angular CLI
+- JavaScript
+- HTML
+- CSS
+### Live Site
+View [live](https://ngetichnicholas.github.io/Quotes-Rating/)
+### License
+This project is under:  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)  
+Copyright &copy; 2021 **[Nicholas Ngetich](https://github.com/ngetichnick)**
+### Questions?
+Twitter: **[@ngetichnichoh](https://twitter.com/ngetichnichoh)**  
+Email: **[nicholas.ngetich@student.moringaschool.com](mailto:nicholas.ngetich@student.moringaschool.com)**
+
+
+

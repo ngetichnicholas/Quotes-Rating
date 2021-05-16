@@ -1,15 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-9 quote">
-      <div *ngFor="let quote of sortQuotes let i= index" class="quote-body" style="width: 25rem; height: 15rem;"> 
-        <h4 class="title" appHighlightQoute>{{quote.quoteTitle}}</h4>
-        <p class="quote-info" id="param">{{quote.quoteInfo}}</p>
-        <button (click)='displayInfo(i)'
-          class="btn btn-outline-primary" id="quotes-button">Ratings</button>
-        <app-quote-details *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
+      <div *ngFor="let quote of sortQuotes let i= index" class="quote-body"> 
+        <h4 class="text-primary title" appHighlightQoute>{{quote.quoteTitle}}</h4>
+        <p appHighlight *ngIf="highestUpvote()===quote.upvote && quote.upvote>0">{{quote.quoteInfo}}</p>
+        <p  *ngIf="highestUpvote()!==quote.upvote || quote.upvote===0">{{quote.quoteInfo}}</p>
+        <h5 class="text-primary">Review</h5>
+        <app-quote-details *ngIf='quote' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
         </app-quote-details>
-        <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}} </span> <span id="date">on: <span
-        id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+          by <span id="name">{{quote.name}} </span>
       </div>
     </div>
     <div class="col-md-3">

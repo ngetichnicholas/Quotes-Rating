@@ -41,6 +41,6 @@
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+      <button type="submit" class="btn btn-sm btn-success" [disabled]="!quoted.name || !quoted.quoteInfo || !quoted.quoteTitle || !quoted.author">Add Quote</button>
   </form>
 </div>

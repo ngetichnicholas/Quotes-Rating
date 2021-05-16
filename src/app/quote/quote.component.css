@@ -4,11 +4,17 @@
   margin:2rem;
   background-color: white;
   width: 25rem;
-  height: 20rem;
+  height: 22rem;
 }
 h5 {
   font-weight: 100;
 }
 #name {
   font-weight: 900;
+}
+h4 {
+  color: #198754;
+}
+h5 {
+  color: #198754;
 }

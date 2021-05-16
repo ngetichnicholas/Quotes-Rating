@@ -3,14 +3,14 @@
     <div class="col-md-9 quote">
       <div *ngFor="let quote of sortQuotes let i= index" class="quote-body"> 
         <h4 class="text-primary title" appHighlightQoute>{{quote.quoteTitle}}</h4>
-        <p class="quote-info">{{quote.  quoteInfo}}</p>
+        <p class="quote-info">{{quote.quoteInfo}}</p>
         <div class="votes">
           <div></div>
         </div>
-        Review
+        <h5 class="text-primary">Review</h5>
         <app-quote-details *ngIf='quote' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
         </app-quote-details>
-        <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}} </span> <span id="date">on: <span
+        <span class="card-subtitle mb-2"> by <span id="name">{{quote.name}} </span> <span id="date">on: <span
         id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
       </div>
     </div>

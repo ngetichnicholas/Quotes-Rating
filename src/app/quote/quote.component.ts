@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
     new Quote (3,'Johnstone','Motivation','We May Encounter Many Defeats But We Must Not Be Defeated.','Maya Angelou',new Date(2021,4,8),0,0),
     new Quote (4,'Odero','Literature','The Best Way To Get Started Is To Quit Talking And Begin Doing.','Walt Disney',new Date(2021,4,11),0,0),
     new Quote (5,'Kenedy','Computer Programming','Programs must be written for people to read, and only incidentally for machines to execute.','Harold Abelson',new Date(2021,4,12),0,0),
-    new Quote (6,'Aspin','Social Life','The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.','Helen Keller',new Date(2021,4,12),0,0)
+    new Quote (6,'Aspin','Social Life','The Man Who Has Confidence In Himself Gains The Confidence Of Others.','Hasidic Proverb',new Date(2021,4,12),0,0)
   ];
   get sortQuotes() {
     return this.quotes.sort((a, b) => {

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h4 class="heading">Add New Quote</h4>
+  <h2 class="heading">Add New Quote</h2>
   <!-- <hr> -->
   <form (ngSubmit)='addQuote() ;quoteForm.resetForm({})' #quoteForm='ngForm'>
       <div class="form-group">
@@ -41,6 +41,6 @@
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+      <button type="submit" class="btn btn-sm btn-success" [disabled]="!quoted.name || !quoted.quoteInfo || !quoted.quoteTitle || !quoted.author">Add Quote</button>
   </form>
 </div>

@@ -7,3 +7,10 @@ h1 {
 p {
   color: #DDDD70;
 }
+#footer {
+  height: 8vh;
+  padding-top: 3vh;
+}
+#header {
+  height: 10vh;
+}

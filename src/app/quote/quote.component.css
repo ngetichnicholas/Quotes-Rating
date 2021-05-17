@@ -1,7 +1,7 @@
 .quote-body {
   float: left;
-  width: 40%;
-  margin:2rem;
+  margin:2rem 0 0 2rem;
+  padding:0.5rem;
   background-color: white;
   width: 25rem;
   height: 22rem;
@@ -17,4 +17,21 @@ h4 {
 }
 h5 {
   color: #198754;
+}
+
+@media screen  and (min-width:0px) and (max-width: 500px) {
+  .quote-body {
+    margin:2rem 0 0 0;
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media screen  and (min-width:770px) and (max-width: 1000px) {
+  .quote-body {
+    margin:2rem;
+    width: 20rem;
+    height: auto;
+    margin-left: 15%;
+  }
 }

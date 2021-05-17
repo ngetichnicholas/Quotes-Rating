@@ -1,9 +1,0 @@
-<div class="votes">
-  <button class="btn btn-sm btn-success" (click)='upvote()'><i class="fa fa-thumbs-up" id="like"></i></button>
-  <div id="upVote">Up votes<br>{{quoty.upvote}}</div>
-  <button class="btn btn-sm btn-warning" id="hate" (click)='downvote()'><i class="fa fa-thumbs-down" id="dislike"></i></button> 
-  <div id="downVote">Down Votes<br>{{quoty.downvote}}</div>
-  <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fas fa-trash-alt"></i></button> 
-</div>
-<p >Author: <span class="author">{{quoty.author}}</span></p>
-Posted <span id="timePosted">{{quoty.datePosted | dateAgo}}</span>: <span id="date">{{quoty.datePosted | date}} </span>

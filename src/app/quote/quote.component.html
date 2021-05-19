@@ -9,7 +9,7 @@
         <p appHighlight *ngIf="highestUpvote()===quote.upvote && quote.upvote>0">{{quote.quoteInfo}}</p>
         <p  *ngIf="highestUpvote()!==quote.upvote || quote.upvote===0">{{quote.quoteInfo}}</p>
         <h5>Review</h5>
-        <app-quote-details *ngIf='quote' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
+        <app-quote-details *ngIf='quote' bind-voting='quote' (isRead)='quoteDelete($event,i)'>
         </app-quote-details>
           by <span id="name">{{quote.name}} </span>
       </div>

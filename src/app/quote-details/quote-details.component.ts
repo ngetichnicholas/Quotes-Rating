@@ -8,16 +8,16 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Input() quoty: Quote;
+  @Input() voting: Quote;
   @Output() isRead = new EventEmitter<boolean>();
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
   upvote(){
-    this.quoty.upvote+=1;
+    this.voting.upvote+=1;
   }
   downvote(){
-    this.quoty.downvote+=1;
+    this.voting.downvote+=1;
   }
   constructor() { }
 

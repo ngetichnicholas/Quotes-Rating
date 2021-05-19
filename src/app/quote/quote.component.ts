@@ -20,23 +20,23 @@ export class QuoteComponent implements OnInit {
       return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
     });
   }
-  preNum:number;
-  lastNum:number;
+  currentValue:number;
+  newValue:number;
   counter:number;
   highestUpvote(){
-    this.preNum = 0
-    this.lastNum = 0
+    this.currentValue = 0
+    this.newValue = 0
 
     for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
-      this.lastNum = this.quotes[this.counter].upvote;
-      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+      this.newValue = this.quotes[this.counter].upvote;
+      if(this.newValue > this.currentValue){this.currentValue = this.newValue}
     }
-    return  this.preNum
+    return  this.currentValue
   }
   addedQuote(quote){
     let arraysize = this.quotes.length;
     quote.id = arraysize+1;
-    quote.completeDate = new Date(quote.completeDate)
+    quote.datePosted = new Date(quote.datePosted)
     this.quotes.push(quote)
   }
   quoteDelete(isRead, index){
